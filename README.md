@@ -69,13 +69,13 @@ fairvlmed10k
 
 ### First
 
-**The complete code for generating glaucoma images will be made publicly available after the paper is accepted.**
+**The complete code for generating glaucoma images will be made publicly available after the paper is accepted. Coming Soon.**
 
 
 
 ### Second
 
-**Here, we provide only the training code and pre-trained models for TransUNet. The code for SAM, Unet, and the complete sample selection process will be made publicly available after the paper is published.**
+**Here, we provide only the training code and pre-trained models for TransUNet. The code for SAM, Unet, and the complete sample selection process will be made publicly available after the paper is published. Coming Soon.**
 
 Trained segmentation model:
 
