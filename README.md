@@ -71,6 +71,12 @@ python gen_sd21.py --01-19-训练controlnet-seed5111原图抠图填充后做输�
 cd src/TransUNet-main
 python train.py --root_path /root/ --dataset 10k --vit_name R50-ViT-B_16
 ```
+也可以下载预训练权重并放置到指定目录：
+
+| 模型名称 | 下载链接                                                                                                                  | 说明 |
+|---------|-----------------------------------------------------------------------------------------------------------------------|------|
+| TU_pretrain_R50-ViT-B_16_skip3_epo150_bs24_224 | [Google Drive](https://drive.google.com/drive/folders/1WwHKwmoVH73ENMX6rrhaEmGW6TVFpCQK?usp=sharing) | 用10k训练集训练的分割模型，放置在TransUNet-main/model下
+
 使用分割模型对生成图像和mask进行评分
 ```python
 python test.py --is_savenii --root_path /sample/gen_image/fairvlmed10k --dataset sd_gen0 --vit_name R50-ViT-B_16
@@ -130,6 +136,14 @@ Common parameters:
 
 ## 🧪 only Test
 如果仅测试模型效果，请通过以下代码执行
+下载预训练权重并放置到指定目录：
+
+| 模型名称                                  | 下载链接                                                                                                                              | 说明 |
+|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|------|
+| efficientnet-b0 fairvlmed10k_best_auc | [Google Drive](https://drive.google.com/drive/folders/1s3HoRg4pwJcS1TA4wiwl8s8NXewfcSRF?usp=sharing) | 用fairvlmed10k训练集加生成图训练的分类模型 |
+| efficientnet-b0 10k_best_auc          | [Google Drive](https://drive.google.com/drive/folders/1NDjwGxQ4oiQm5Lvt-MvY-ar2ZZcMu8OU?usp=sharing) | 用10k训练集加生成图训练的分类模型 |
+
+
 ```python
 python --model efficientnet-b0 --data_root /root/ --dataset fairvlmed10k --best_model_path checkpoints/label_classification/wt5ic8g1/best_auc.pth
 ```
