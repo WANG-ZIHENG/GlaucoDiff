@@ -4,7 +4,7 @@ import re
 from glob import glob
 
 from cldm.model import create_model
-from cycle_train import gen_new_image
+from pipeline import gen_new_image
 from share import *
 
 

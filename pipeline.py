@@ -147,7 +147,8 @@ def gen_new_image(args, topn_file, created_model, global_epoch=0,
     model = created_model
     if ckpt_path is None:
         ckpt_path = get_last_lightning_cpkpt(args.result_dir)
-    model.load_state_dict(load_state_dict(ckpt_path, location='cuda'))
+    model.load_state_dict(load_state_dict(ckpt_path, location='cpu'))
+    torch.cuda.empty_cache()
     model = model.cuda()
     ddim_sampler = DDIMSampler(model)
     dataset = MyDataset(args=args, gen_data=True, file_list=topn_file, gen_scale_masks=True)

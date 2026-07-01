@@ -7,7 +7,7 @@ import pandas as pd
 import torch
 
 from cldm.model import create_model
-from cycle_train import gen_new_image, get_last_global, train_control
+from pipeline import gen_new_image, get_last_global, train_control
 from share import *
 
 
