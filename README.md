@@ -94,11 +94,13 @@ https://github.com/WANG-ZIHENG/ControlGlaucoma.
 ## Citation
 
 ```bibtex
-@inproceedings{wang2025glaucodiff,
-  title     = {Fairness-Aware vCDR-Controlled Generation for Glaucoma Diagnosis},
-  author    = {Wang, Ziheng and Yang, Shuran and Chen, Wen and Zhang, Zhen and Wang, Mengyu and Zhou, Feixiang and Tian, Yu and Wang, Meng and Zhao, Yitian and Zheng, Yalin and Meng, Yanda},
-  booktitle = {Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2025},
-  year      = {2025}
+@inproceedings{wang2025fairness,
+  title={Fairness-Aware vCDR-Controlled Generation for Glaucoma Diagnosis},
+  author={Wang, Ziheng and Yang, Shuran and Chen, Wen and Zhang, Zhen and Wang, Mengyu and Zhou, Feixiang and Tian, Yu and Wang, Meng and Zhao, Yitian and Zheng, Yalin and Meng, Yanda},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={256--266},
+  year={2025},
+  organization={Springer}
 }
 ```
 
